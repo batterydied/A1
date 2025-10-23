@@ -1,0 +1,5 @@
+[
+  {
+    "code": "from typing import List\n\ndef candidate(numbers: List[float]) -> float:\n    n = len(numbers)\n    mean = sum(numbers) / n\n    total_abs_dev = sum(abs(x - mean) for x in numbers)\n    return total_abs_dev / n"
+  }
+]

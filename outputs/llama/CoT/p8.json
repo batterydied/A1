@@ -1,0 +1,5 @@
+[
+  {
+    "code": "from typing import List, Tuple\n\ndef candidate(numbers: List[int]) -> Tuple[int, int]:\n    if not numbers:\n        return 0, 1\n    else:\n        return sum(numbers), eval('*'.join(map(str, numbers)))"
+  }
+]

@@ -1,0 +1,5 @@
+[
+  {
+    "code": "from typing import List\n\ndef candidate(numbers: List[int]) -> List[int]:\n    result = []\n    max_so_far = float('-inf')\n    for num in numbers:\n        max_so_far = max(max_so_far, num)\n        result.append(max_so_far)\n    return result"
+  }
+]

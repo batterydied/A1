@@ -1,0 +1,5 @@
+[
+  {
+    "code": "def candidate(number: float) -> float:\n    integer_part = int(number)\n    return number - integer_part"
+  }
+]

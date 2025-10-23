@@ -1,0 +1,5 @@
+[
+  {
+    "code": "from typing import List\n\ndef candidate(numbers):\n    if not numbers:\n        raise ValueError(\"Input list is empty\")\n    mean = sum(numbers) / len(numbers)\n    absolute_deviations = [abs(num - mean) for num in numbers]\n    return sum(absolute_deviations) / len(absolute_deviations)"
+  }
+]

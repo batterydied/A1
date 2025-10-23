@@ -1,0 +1,5 @@
+[
+  {
+    "code": "def candidate(numbers: list[int], delimeter: int) -> list[int]:\n    if not numbers:\n        return []\n    result = [numbers[0]]\n    for num in numbers[1:]:\n        result.extend([delimeter, num])\n    return result"
+  }
+]

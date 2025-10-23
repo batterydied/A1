@@ -1,0 +1,5 @@
+[
+  {
+    "code": "import re\nfrom typing import List\n\ndef candidate(paren_string: str) -> List[str]:\n    return re.findall(r'\\([^()]+\\)', paren_string)"
+  }
+]

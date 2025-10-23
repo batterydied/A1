@@ -1,0 +1,5 @@
+[
+  {
+    "code": "from typing import List\n\ndef candidate(paren_string: str) -> List[str]:\n    stack = []\n    groups = []\n    group = ''\n\n    for char in paren_string.replace(' ', ''):\n        if char == '(':\n            stack.append(char)\n            group += char\n        elif char == ')':\n            if stack:\n                stack.pop()\n                group += char\n                if not stack:\n                    groups.append(group)\n                    group = ''\n        else:\n            continue\n\n    return groups"
+  }
+]

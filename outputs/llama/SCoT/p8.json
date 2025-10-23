@@ -1,0 +1,5 @@
+[
+  {
+    "code": "from typing import List, Tuple\n\ndef candidate(numbers: List[int]) -> Tuple[int, int]:\n    sum_result = 0\n    product_result = 1\n    for num in numbers:\n        sum_result += num\n        product_result *= num\n    return sum_result, product_result\n"
+  }
+]

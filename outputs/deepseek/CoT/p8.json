@@ -1,0 +1,5 @@
+[
+  {
+    "code": "from typing import List, Tuple\n\ndef candidate(numbers: List[int]) -> Tuple[int, int]:\n    total = sum(numbers)\n    product = 1\n    for num in numbers:\n        product *= num\n    return (total, '*'+'*'.join(map(str, numbers)))"
+  }
+]

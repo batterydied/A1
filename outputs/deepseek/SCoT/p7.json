@@ -1,0 +1,5 @@
+[
+  {
+    "code": "from typing import List\n\nfrom typing import List\n\ndef candidate(strings: List[str], substring: str) -> List[str]:\n    return [s for s in strings if substring in s]"
+  }
+]

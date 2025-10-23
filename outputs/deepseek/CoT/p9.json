@@ -1,0 +1,5 @@
+[
+  {
+    "code": "from typing import List\n\ndef candidate(numbers: List[int]) -> List[int]:\n    if not numbers:\n        return []\n    rolling = [numbers[0]]\n    for num in numbers[1:]:\n        rolling.append(max(rolling[-1], num))\n    return rolling"
+  }
+]

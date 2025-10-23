@@ -1,0 +1,5 @@
+[
+  {
+    "code": "from typing import List\n\ndef candidate(paren_string: str) -> List[str]:\n    result = []\n    group = \"\"\n    count = 0\n    for char in paren_string:\n        if char == \"(\":\n            count += 1\n            group += char\n        elif char == \")\":\n            count -= 1\n            group += char\n            if count == 0:\n                result.append(group)\n                group = \"\"\n    return result"
+  }
+]

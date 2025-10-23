@@ -1,0 +1,5 @@
+[
+  {
+    "code": "from typing import List\n\ndef candidate(paren_string: str) -> List[int]:\n    result = []\n    groups = paren_string.split()\n    for group in groups:\n        current = 0\n        max_depth = 0\n        for c in group:\n            if c == '(':\n                current += 1\n                if current > max_depth:\n                    max_depth = current\n            else:\n                current -= 1\n        result.append(max_depth)\n    return result"
+  }
+]

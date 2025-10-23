@@ -1,0 +1,5 @@
+[
+  {
+    "code": "def candidate(numbers):\n    sum_result = 0\n    product_result = 1\n\n    for number in numbers:\n        sum_result += number\n        product_result *= number\n\n    return sum_result, product_result"
+  }
+]

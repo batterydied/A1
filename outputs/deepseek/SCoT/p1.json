@@ -1,0 +1,5 @@
+[
+  {
+    "code": "from typing import List\n\ndef candidate(paren_string: str) -> List[str]:\n    cleaned = paren_string.replace(' ', '')\n    groups = []\n    current_group = []\n    balance = 0\n    for char in cleaned:\n        current_group.append(char)\n        if char == '(':\n            balance += 1\n        else:\n            balance -= 1\n        if balance == 0:\n            groups.append(''.join(current_group))\n            current_group = []\n    return groups"
+  }
+]

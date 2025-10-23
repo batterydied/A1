@@ -1,0 +1,5 @@
+[
+  {
+    "code": "from typing import List\n\ndef candidate(paren_string: str) -> list[str]:\n    result = []\n    temp = ''\n    balance = 0\n    for char in paren_string:\n        if char == '(':\n            balance += 1\n            temp += char\n        elif char == ')':\n            balance -= 1\n            temp += char\n            if balance == 0:\n                result.append(temp)\n                temp = ''\n    return result"
+  }
+]

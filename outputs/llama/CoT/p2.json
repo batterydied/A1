@@ -1,0 +1,5 @@
+[
+  {
+    "code": "def candidate(number: float) -> float:\n    return number - int(number)"
+  }
+]

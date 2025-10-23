@@ -1,0 +1,5 @@
+[
+  {
+    "code": "from typing import List\n\ndef candidate(numbers, delimeter):\n    result = []\n    for i, num in enumerate(numbers):\n        if i % 2 == 0:\n            result.append(num)\n        if i > 0:\n            result.append(delimeter)\n    return result"
+  }
+]

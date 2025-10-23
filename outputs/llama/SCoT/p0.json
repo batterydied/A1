@@ -1,0 +1,5 @@
+[
+  {
+    "code": "from typing import List\nimport itertools\n\ndef candidate(numbers: List[float], threshold: float) -> bool:\n    for a, b in itertools.combinations(numbers, 2):\n        if abs(a - b) < threshold:\n            return True\n    return False"
+  }
+]
