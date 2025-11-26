@@ -1,0 +1,2 @@
+cd exercise2
+pytest --cov=src_ex3 --cov-branch 

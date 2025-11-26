@@ -1,0 +1,7 @@
+{
+    "specs": [
+        "assert isinstance(res, (int, float))",
+        "assert res >= 0",
+        "assert res == sum(abs(num - (sum(numbers) / len(numbers))) for num in numbers) / len(numbers)"
+    ]
+}

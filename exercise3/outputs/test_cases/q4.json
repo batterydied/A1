@@ -1,0 +1,5 @@
+[
+  {
+    "code": "```python\nimport pytest\nimport math\n\ndef test_spec_guided_valid_numbers():\n    numbers = [1, 2, 3, 4, 5]\n    expected_result = sum(math.sqrt((num - sum(numbers) / len(numbers)) ** 2 for num in numbers)) / len(numbers)\n    result = candidate(numbers)\n    assert result == expected_result\n\ndef test_spec_guided_zero_deviation():\n    numbers = [5.0] * 10\n    expected_result = 0\n    result = candidate(numbers)\n    assert result == expected_result\n\ndef test_spec_guided_negative_numbers():\n    with pytest.raises(TypeError):\n        candidate([-1, 2, 3])\n\ndef test_spec_guided_non_numeric_input():\n    with pytest.raises(TypeError):\n        candidate([1, 2, 'a'])\n\ndef test_spec_guided_empty_list():\n    numbers = []\n    with pytest.raises(ZeroDivisionError):\n        candidate(numbers)\n```\n\nNote that I had to add additional test cases for edge cases not covered by the original specification, such as negative numbers and non-numeric input. These are necessary to ensure that the function behaves correctly in all situations."
+  }
+]

@@ -1,0 +1,18 @@
+You are generating spec-guided unit tests.
+
+Below are the final, corrected formal specifications of the function `candidate(numbers)`:
+
+<INSERT SPEC LIST HERE>
+
+Using ONLY these specifications, generate pytest test cases that:
+
+1. CALL the function `candidate(numbers)` to compute `res`.
+2. Construct input lists whose outputs can be inferred from the specifications.
+3. Compute the expected result explicitly from the specification, not by using the function.
+4. Assert that the function output matches the mathematically expected result.
+5. Do not rewrite the specifications as test assertions.
+6. Do not hardcode `res` manually.
+7. Return ONLY valid Python test code (no comments, no markdown).
+8. Label every test function name with the prefix `test_spec_guided_`.
+
+The output MUST consist of properly structured pytest test functions that exercise the actual implementation.

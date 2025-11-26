@@ -1,0 +1,9 @@
+{
+  "specs": [
+    "assert isinstance(res, list)",
+    "assert len(res) == len(numbers)",
+    "assert res[0] == numbers[0]",
+    "assert all(res[i] >= res[i - 1] for i in range(1, len(res)))",
+    "assert all(res[i] == max(numbers[:i+1]) for i in range(len(numbers)))"
+  ]
+}

@@ -1,0 +1,4 @@
+{
+    "method_signature": "def candidate(numbers) -> float:",
+    "problem_statement":  "For a given list of input numbers, calculate the Mean Absolute Deviation around the mean of this dataset. Mean Absolute Deviation (MAD) is the average absolute difference between each element and the dataset’s mean: MAD = average |x − x_mean|"
+}

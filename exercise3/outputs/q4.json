@@ -1,0 +1,5 @@
+[
+  {
+    "code": "```python\nassert res is None or isinstance(res, (int, float))\nassert all(isinstance(num, (int, float)) for num in numbers)\nassert res == sum(abs(num - sum(numbers) / len(numbers)) for num in numbers) / len(numbers)\nassert res >= 0\nassert res == (sum(abs(num - mean) for num in numbers) / len(numbers)) if mean != 0 else (sum(abs(num) for num in numbers) / len(numbers))\n```"
+  }
+]

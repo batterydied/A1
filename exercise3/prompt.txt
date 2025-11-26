@@ -1,0 +1,22 @@
+Problem description:
+{description}
+
+Method signature:
+{method_signature}
+
+Please write formal specifications as Python assert statements that describe the 
+correct behavior of this method.
+
+Let "res" denote the expected return value of candidate(numbers). 
+Do NOT call candidate() inside the assertions.
+Do NOT use any methods that cause side effects such as:
+- modifying lists or data structures (append, add, remove, setitem)
+- printing or I/O (print, input, file operations)
+- randomness or timing (random, datetime.now)
+
+Use only pure arithmetic, boolean logic, and immutable expressions.
+The assertions must describe logical relationships between the input list,
+the mean of the list, the absolute deviations, and the final MAD value.
+
+Produce approximately 5 unique specification-style assertions.
+Return ONLY Python assert statements (no prose, no comments).
